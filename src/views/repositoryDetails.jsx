@@ -68,7 +68,7 @@ function RepositoryDetails() {
           <p>
             Branches: {branch.length}
           </p>
-          <p>
+          <p  className="repo-live">
             Live site:{" "}
             {deploy.length === 0 ? (
               `none`

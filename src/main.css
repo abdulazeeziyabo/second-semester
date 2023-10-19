@@ -76,7 +76,7 @@ body{
  height: 100%;
 }
 .github-name{
-  font-size: 1.5rem;
+  font-size: 1.10rem;
 }
 .element-repo{
   margin: 0 auto;
@@ -152,19 +152,17 @@ body{
       width: 100%;
       padding: 0.4rem;
     font-size: 0.7rem;
-
-    /* width: 7rem; */
   }
     .error-page{
     
       margin: 0 auto;
       text-align: center;
       margin-top: 5rem;
-      /* margin-top: 2rem;
-      margin-left: 4rem; */
     }
         .repo-name{
           font-size: 1.2rem;
         }
-  .repo-btn
+.repo-live a{
+  text-wrap: nowrap;
+}
 }
