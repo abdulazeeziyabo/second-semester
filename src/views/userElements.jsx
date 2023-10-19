@@ -1,4 +1,4 @@
-// import {FaGithub} from 'react-icons/fa'
+import {FaGithub} from 'react-icons/fa'
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Loader from "../components/Loader.jsx";
@@ -31,7 +31,7 @@ function UserElements() {
   return (
     <div className='wrapper-repo'>
       <div className='header-repo'>
-        {/* <FaGithub className='github-icon' /> */}
+        <FaGithub className='github-icon' />
         <div className='github-name'>My GitHub Repositories</div>
       </div>
       {isLoading && <Loader />}

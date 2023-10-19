@@ -1,4 +1,4 @@
-// import { FaCodeBranch } from "react-icons/fa";
+import { FaCodeBranch } from "react-icons/fa";
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import Loader from "../components/Loader.jsx";
@@ -66,7 +66,7 @@ function RepositoryDetails() {
           <p>Visibility: {repository.private ? "Private" : "Public"}</p>
           <p>Date and Time created: {repository.created_at}</p>
           <p>
-            {/* <FaCodeBranch /> */}
+            <FaCodeBranch />
             Branches: {branch.length}
           </p>
           <p>
