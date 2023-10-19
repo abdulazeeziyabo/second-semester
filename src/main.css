@@ -69,14 +69,14 @@ body{
   gap: 1rem;
   margin-top: 2rem;
   margin-bottom: 3rem;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
 }
 .github-icon{
  width: 2rem; 
  height: 100%;
 }
 .github-name{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .element-repo{
   margin: 0 auto;
@@ -84,7 +84,7 @@ body{
   margin-bottom: 1rem;
 }
 .repo-name{
-  font-size: clamp(0.75rem, 30vw, 1.5rem);
+  font-size: 1.5rem;
 }
 .btn-repo{
   max-width: 8rem;
@@ -144,8 +144,8 @@ body{
     max-width: 20rem;
   }
     .repo-btns{
-      margin-left: 3rem;
-      gap: 2rem;
+      margin-left: 1rem;
+      gap: 1rem;
     }
   .btn-repo{
     max-width: 6rem;
@@ -163,4 +163,8 @@ body{
       /* margin-top: 2rem;
       margin-left: 4rem; */
     }
+        .repo-name{
+          font-size: 1.2rem;
+        }
+  .repo-btn
 }
