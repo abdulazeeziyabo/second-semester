@@ -2,13 +2,13 @@ import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './main.css';
-const UserElements =  lazy(()=> import ( './views/userElements'));
+const UserElements =  lazy(()=> import ( './views/userElements.jsx'));
 import RepositoryDetails from './views/repositoryDetails';
-import Dashboard from './layouts/Dashboard';
-import ErrorBoundary from './components/ErrorBoundary';
-import NotFound from './components/NotFound/NotFound';
-import ErrorTesting from './components/ErrorTesting';
-import Fallback from './components/FallBack';
+import Dashboard from './layouts/Dashboard.jsx';
+import ErrorBoundary from './components/ErrorBoundary.jsx';
+import NotFound from './components/NotFound/NotFound.jsx';
+import ErrorTesting from './components/ErrorTesting.jsx';
+import Fallback from './components/FallBack.jsx';
 
 
 // create routes

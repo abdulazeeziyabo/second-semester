@@ -1,7 +1,7 @@
 import { FaCodeBranch } from "react-icons/fa";
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import Loader from "../components/Loader";
+import Loader from "../components/Loader.jsx";
 
 function RepositoryDetails() {
   const [repository, setRepository] = useState({});

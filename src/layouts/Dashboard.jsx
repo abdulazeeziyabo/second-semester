@@ -1,4 +1,4 @@
-import NavBar from '../components/navbar/NavBar'
+import NavBar from '../components/navbar/NavBar.jsx'
 import { Outlet } from 'react-router-dom'
 
 const Dashboard = () => {

@@ -1,8 +1,8 @@
 import {FaGithub} from 'react-icons/fa'
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Loader from "../components/Loader";
-import ErrorTesting from "../components/errorTesting";
+import Loader from "../components/Loader.jsx";
+import ErrorTesting from "../components/ErrorTesting.jsx";
 
 function UserElements() {
   const [userElements, setUserElements] = useState([]);
