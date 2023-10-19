@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #faf4ee;
+}
+.active{
+  color: #c99154;
+}
+.pending{
+  color: #140e08;
+}
+/* style for the loader */
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 3px solid #e6e6e6dc;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  position: absolute;
+    left: 50%;
+    top: 50%;
+  animation: rotation 1s linear infinite;
+}
+
+.loader::after {
+  content: '';
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  border-bottom-color: #c98554;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* style for the main page */
+.card-repo{
+  max-width: 38rem;
+  width: 100%;
+  padding: 3rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  border: 2px solid #d1d0d0;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+.header-repo{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.github-icon{
+ width: 2rem; 
+ height: 100%;
+}
+.github-name{
+  font-size: 2rem;
+}
+.element-repo{
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.btn-repo{
+  width: 8rem;
+  padding: 0.75rem;
+  background-color: #c98554;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-repo a{
+  text-decoration: none;
+  color: #FFF;
+}
+.btn-repo:hover{
+  background-color: #efdecc;
+  color:#c98554 ;
+}
+
+.btn-repo a:hover{
+  background-color: #efdecc;
+    color: #c98554;
+}
+
+/* style for the about repo page */
+.about-repo-wrapper{
+  line-height: 2;
+}
+/* style for the error testing page */
+.error-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+
+}
+.error-page p{
+  color: #140e08;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+.error-page a{
+  text-decoration: none;
+  color: #c98554;
+}
+/* style for error testing button */
+.repo-btns{
+  display: flex;
+  justify-items: center;
+ margin-left: 8rem;
+  gap: 5rem;
+}
+
+@media (max-width: 400px){
+  .card-repo{
+    max-width: 20rem;
+  }
+    .repo-btns{
+      margin-left: 3rem;
+      gap: 2rem;
+    }
+  .btn-repo{
+    padding: 0;
+    /* width: 7rem; */
+  }
+}
