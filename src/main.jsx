@@ -7,7 +7,7 @@ import RepositoryDetails from './views/repositoryDetails';
 import Dashboard from './layouts/Dashboard';
 import ErrorBoundary from './components/ErrorBoundary';
 import NotFound from './components/NotFound/NotFound';
-import ErrorTesting from './components/errorTesting';
+import ErrorTesting from './components/ErrorTesting';
 import Fallback from './components/FallBack';
 
 
