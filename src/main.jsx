@@ -8,7 +8,7 @@ import Dashboard from './layouts/Dashboard.jsx';
 import ErrorBoundary from './components/ErrorBoundary.jsx';
 import NotFound from './components/NotFound/NotFound.jsx';
 import ErrorTesting from './components/ErrorTesting.jsx';
-import Fallback from './components/FallBack.jsx';
+import Fallback from './components/Fallback.jsx';
 
 
 // create routes
