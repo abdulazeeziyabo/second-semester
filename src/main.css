@@ -52,7 +52,8 @@ body{
 }
 /* style for the main page */
 .card-repo{
-  width: 38rem;
+  max-width: 38rem;
+  width: 100%;
   padding: 3rem;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -142,6 +143,10 @@ body{
 }
 
 @media (max-width: 375px){
+  .card-repo {
+      max-width: 20rem;
+      width: 100%;
+    }
     .repo-btns{
       margin-left: 1rem;
       gap: 1rem;
