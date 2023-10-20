@@ -52,8 +52,7 @@ body{
 }
 /* style for the main page */
 .card-repo{
-  max-width: 38rem;
-  width: 100%;
+  width: 38rem;
   padding: 3rem;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -76,6 +75,7 @@ body{
  height: 100%;
 }
 .github-name{
+  text-align: center;
   font-size: 1.10rem;
 }
 .element-repo{
@@ -84,7 +84,8 @@ body{
   margin-bottom: 1rem;
 }
 .repo-name{
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  text-align: center;
 }
 .btn-repo{
   max-width: 8rem;
@@ -99,6 +100,7 @@ body{
 .btn-repo a{
   text-decoration: none;
   color: #FFF;
+
 }
 .btn-repo:hover{
   background-color: #efdecc;
@@ -139,10 +141,7 @@ body{
   gap: 4rem;
 }
 
-@media (max-width: 400px){
-  .card-repo{
-    max-width: 20rem;
-  }
+@media (max-width: 375px){
     .repo-btns{
       margin-left: 1rem;
       gap: 1rem;
@@ -159,10 +158,22 @@ body{
       text-align: center;
       margin-top: 5rem;
     }
-        .repo-name{
-          font-size: 1.2rem;
-        }
+/* .repo-name{
+font-size: 0.85rem;
+font-weight: bold;
+} */
+  
 .repo-live a{
   text-wrap: nowrap;
+}
+.error-testin a{
+max-width: 6rem;
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 0.7rem;
+}
+.github-name{
+  font-size: 0.85rem;
+  text-align: center;
 }
 }

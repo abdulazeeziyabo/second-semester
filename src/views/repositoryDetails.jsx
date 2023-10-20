@@ -1,4 +1,4 @@
-
+import { FaRegStar, FaRegEye, FaCodeBranch } from "react-icons/fa";
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import Loader from "../components/Loader.jsx";
@@ -19,9 +19,9 @@ function RepositoryDetails() {
         setRepository(data);
       } catch (error) {
         console.error(error);
-      }finally {
-       setIsLoading(false);
-     }
+      } finally {
+        setIsLoading(false);
+      }
     })();
   }, [id]);
 
@@ -58,17 +58,15 @@ function RepositoryDetails() {
       {isLoading && <Loader />}
       {!isLoading && (
         <div className='about-repo-wrapper'>
-          <h1 className="repo-name">{repository.name}</h1>
+          <h1 className='repo-name'>{repository.name}</h1>
           <p>
             Language:{" "}
             {repository.language === null ? "None" : repository.language}
           </p>
           <p>Visibility: {repository.private ? "Private" : "Public"}</p>
           <p>Date and Time created: {repository.created_at}</p>
-          <p>
-            Branches: {branch.length}
-          </p>
-          <p  className="repo-live">
+          <p><FaCodeBranch/>Branches: {branch.length}</p>
+          <p className='repo-live'>
             Live site:{" "}
             {deploy.length === 0 ? (
               `none`
@@ -83,6 +81,9 @@ function RepositoryDetails() {
               View on Github
             </a>
           </p>
+          <p><FaRegStar/>Stars: {repository.stargazers_count}</p>
+          <p><FaRegEye/>Watch: {repository.watchers}</p>
+          <p> Forks: {repository.forks}</p>
           <p>ID: {repository.id}</p>
 
           <Link to='/'>
