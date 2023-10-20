@@ -1,4 +1,3 @@
-import { FaRegStar, FaRegEye, FaCodeBranch } from "react-icons/fa";
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import Loader from "../components/Loader.jsx";
@@ -65,7 +64,7 @@ function RepositoryDetails() {
           </p>
           <p>Visibility: {repository.private ? "Private" : "Public"}</p>
           <p>Date and Time created: {repository.created_at}</p>
-          <p><FaCodeBranch/>Branches: {branch.length}</p>
+          <p>Branches: {branch.length}</p>
           <p className='repo-live'>
             Live site:{" "}
             {deploy.length === 0 ? (
@@ -81,8 +80,8 @@ function RepositoryDetails() {
               View on Github
             </a>
           </p>
-          <p><FaRegStar/>Stars: {repository.stargazers_count}</p>
-          <p><FaRegEye/>Watch: {repository.watchers}</p>
+          <p>Stars: {repository.stargazers_count}</p>
+          <p>Watch: {repository.watchers}</p>
           <p> Forks: {repository.forks}</p>
           <p>ID: {repository.id}</p>
 
