@@ -142,9 +142,9 @@ body{
   gap: 4rem;
 }
 
-@media (max-width: 375px){
+@media (max-width: 400px){
   .card-repo {
-      max-width: 20rem;
+      max-width: 18rem;
       width: 100%;
     }
     .repo-btns{
