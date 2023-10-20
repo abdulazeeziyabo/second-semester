@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './main.css';
-const UserElements =  lazy(()=> import ( './views/UserElements.jsx'));
+const UserElements =  lazy(()=> import ( './views/userElements.jsx'));
 import RepositoryDetails from './views/repositoryDetails';
 import Dashboard from './layouts/Dashboard.jsx';
 import ErrorBoundary from './components/ErrorBoundary.jsx';
