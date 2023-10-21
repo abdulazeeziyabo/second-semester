@@ -13,7 +13,11 @@ Implement an API fetch of your GitHub portfolio, show a page with a list of all 
 <p>A simple GitHub API app built with React. This app shows all my GitHub repositories in a page and upon a click on 'show more' show individual details on each repository. The app also has an error boundary page when something goes wrong and a 404 page when a wrong page is entered. 
 
 # Setup
-I setup my app using Vite and deleted files and folders not wanted. I created  views, component and layouts folders.
+I setup my app using Vite and deleted files and folders not wanted. I created  views, components and layouts folders. The views folder contains the  userElements and repositoryDetails components of the site while the components folder contains the Navbar.jsx, Notfound.jsx, ErrorBoundary.jsx, ErrorTesting.jsx, FallBack.jsx and Loader.jsx componenets. The layout folder contains the dashbord component. All these components were rendered in the main.jsx component.
+
+# The API fetch
+ To make the API call I used the useEffet hook which takes two parametres ( a function and a dependency all) and this was used with the useState hook.
+
 
 
 
