@@ -3,10 +3,21 @@
   justify-content: space-between;
   margin: 1.5rem;
   cursor: pointer;
-}
+  /* height:2rem; */
+ /* position: fixed; */
+  background-color: #faf4ee;
+  position: fixed;
+  height: 3rem;
+  top: -1.5rem;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #cecbcb;
+ }
 
 .nav-bar a{
 text-decoration:none;
 font-size: 1.10rem;
+transition: 0.5 ease all;
+
 
 }
