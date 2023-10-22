@@ -29,11 +29,7 @@ function RepositoryDetails() {
     (async () => {
       try {
         const gitUrl = `https://api.github.com/repositories/${id}/branches`;
-        const response = await fetch(gitUrl, {
-          headers:{
-           Authorization:`Bearer ${token}`, 
-          },
-        });
+        const response = await fetch(gitUrl);
         const data = await response.json();
         setBranch(data);
       } catch (error) {
