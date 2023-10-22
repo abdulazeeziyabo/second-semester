@@ -158,6 +158,10 @@ background-color: #667986;
   text-decoration: none;
   color: #857047;
 }
+.error-testing {
+  text-decoration: none;
+    color: #857047;
+}
 /* style for error testing button */
 .repo-btns{
   display: flex;
