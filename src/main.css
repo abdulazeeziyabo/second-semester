@@ -23,12 +23,12 @@ body{
   color:#857047 ;
   cursor: pointer;
 }
-/* .active{
+.active{
   color: #857047;
 }
 .pending{
   color: #140e08;
-} */
+}
 /* style for the loader */
 .loader {
   width: 48px;
