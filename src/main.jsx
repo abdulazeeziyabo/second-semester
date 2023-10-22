@@ -7,6 +7,7 @@ import RepositoryDetails from './views/repositoryDetails';
 import Dashboard from './layouts/Dashboard.jsx';
 import ErrorBoundary from './components/ErrorBoundary.jsx';
 import NotFound from './components/NotFound/NotFound.jsx';
+const Home = lazy(()=>import ('./views/Home'));
 import ErrorTesting from './components/ErrorTesting.jsx';
 import Fallback from './components/Fallback.jsx';
 
@@ -19,8 +20,9 @@ const routes = [
       {
         element: <Dashboard />,
         children: [
-          { path: "/", element: <UserElements /> },
-           { path: "repository/:id", element: <RepositoryDetails /> },
+          {path: "/", element: < Home/>},
+          { path: "/repository", element: <UserElements /> },
+           { path: '/repository/:id', element: <RepositoryDetails /> },
         ],
       },
       {

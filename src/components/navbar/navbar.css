@@ -5,13 +5,13 @@
   cursor: pointer;
   /* height:2rem; */
  /* position: fixed; */
-  background-color: #faf4ee;
+  background-color: #001f35;
   position: fixed;
   height: 3rem;
-  top: -1.5rem;
+  top: -1rem;
   left: 0;
   right: 0;
-  border-bottom: 1px solid #cecbcb;
+  border-bottom: 1px solid #334c5d;
  }
 
 .nav-bar a{

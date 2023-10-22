@@ -8,7 +8,7 @@ const NotFound = () => {
       <div className="container-notfound">
         <h1 className='header-notfound'>404 - Page Not Found</h1>
         <Link to='/'>
-          <button className='btn-notfound'>Back to Repo page</button>
+          <button className='btn-notfound'>Back to Home page</button>
         </Link>
       </div>
     </>

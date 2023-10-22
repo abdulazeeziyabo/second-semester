@@ -12,7 +12,7 @@ console.error(error);
             <p>Sorry, an unexpected error has occurred.</p>
             {/* <p className="error-status">{error.status}</p>
             <p className="error-status-text"><i>{error.statusText}</i></p> */}
-            <p>Go to <Link to="/">Repositories</Link></p>
+            <p>Go to <Link to="/">Home Page</Link></p>
             </div>
   )
 }

@@ -13,7 +13,12 @@ function RepositoryDetails() {
     (async () => {
       try {
         const gitUrl = `https://api.github.com/repositories/${id}`;
-        const response = await fetch(gitUrl);
+        const response = await fetch(gitUrl, {
+          headers: {
+            Authorization:
+              "Bearer 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",
+          },
+        });
         const data = await response.json();
         setRepository(data);
       } catch (error) {
@@ -28,7 +33,12 @@ function RepositoryDetails() {
     (async () => {
       try {
         const gitUrl = `https://api.github.com/repositories/${id}/branches`;
-        const response = await fetch(gitUrl);
+        const response = await fetch(gitUrl, {
+          headers: {
+            Authorization:
+              "Bearer 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",
+          },
+        });
         const data = await response.json();
         setBranch(data);
       } catch (error) {
@@ -41,7 +51,12 @@ function RepositoryDetails() {
     (async () => {
       try {
         const gitUrl = `https://api.github.com/repositories/${id}/deployments`;
-        const response = await fetch(gitUrl);
+        const response = await fetch(gitUrl, {
+          headers: {
+            Authorization:
+              "Bearer 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",
+          },
+        });
         const data = await response.json();
         setDeploy(data);
       } catch (error) {
@@ -75,18 +90,13 @@ function RepositoryDetails() {
               </a>
             )}
           </p>
-          <p>
-            <a href={`https://github.com/${repository.full_name}`}>
-              View on Github
-            </a>
-          </p>
           <p>Stars: {repository.stargazers_count}</p>
           <p>Watch: {repository.watchers}</p>
           <p> Forks: {repository.forks}</p>
           <p>ID: {repository.id}</p>
 
-          <Link to='/'>
-            <button className='btn-repo'>Back to repo</button>
+          <Link to='/repository'>
+            <button className='btn-repo'>Back to repositories</button>
           </Link>
         </div>
       )}

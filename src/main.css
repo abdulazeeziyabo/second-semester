@@ -4,23 +4,36 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family:Arial, Helvetica, sans-serif
 }
 
 body{
-  background-color: #faf4ee;
-  padding-top: 3.5rem;
+  background-color: #222;
+  color:#ccd2d7;
+  padding-top: 5rem;
 }
-.active{
-  color: #848ef7;
+
+.home-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+.home-page span{
+  color:#857047 ;
+  cursor: pointer;
+}
+/* .active{
+  color: #857047;
 }
 .pending{
   color: #140e08;
-}
+} */
 /* style for the loader */
 .loader {
   width: 48px;
   height: 48px;
-  border: 3px solid #e6e6e6dc;
+  border: 3px solid #857047;
   border-radius: 50%;
   display: inline-block;
   position: relative;
@@ -39,7 +52,7 @@ body{
   height: 40px;
   border-radius: 50%;
   border: 6px solid transparent;
-  border-bottom-color: #0c1684;
+  border-bottom-color: #857047;
 }
 
 @keyframes rotation {
@@ -58,11 +71,8 @@ body{
   padding: 3rem;
   margin: 0 auto;
   margin-bottom: 2rem;
-  border: 2px solid #d1d0d0;
+  border: 4px solid #857047;
   border-radius: 1.5rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-
 }
 .header-repo{
   display: flex;
@@ -92,33 +102,36 @@ body{
   margin-left: 0.25rem;
 }
 .btn-repo{
-  max-width: 8rem;
+  max-width: 18rem;
   width: 100%;
-  padding: 0.4rem;
-  background-color: #0c1684;
-  color: #FFF;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: #334c5d;
+  color: #e5e9eb;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 .btn-repo a{
   text-decoration: none;
-  color: #FFF;
+  color: #e5e9eb;
 
 }
 .btn-repo:hover{
-  background-color: #ddd9d5;
-  color:#0c1684 ;
+  background-color: #667986;
+  color:#e5e9eb ;
    
 }
 
 .btn-repo:active{
-
+background-color: #667986;
+  box-shadow: 0 5px #99a5ae;
+  transform: translateY(4px);
 }
 
 .btn-repo a:hover{
-  background-color: #efdecc;
-    color: #0c1684;
+  background-color: #667986;
+    color: #e5e9eb;
     opacity: 0.8;
 }
 .btn-repo a:active {
@@ -138,13 +151,12 @@ body{
 
 }
 .error-page p{
-  color: #140e08;
   font-size: 1.5rem;
   line-height: 2;
 }
-.error-page a{
+.error-page a, .home-page-link{
   text-decoration: none;
-  color: #0c1684;
+  color: #857047;
 }
 /* style for error testing button */
 .repo-btns{
