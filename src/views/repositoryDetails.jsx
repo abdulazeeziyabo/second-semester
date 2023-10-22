@@ -13,7 +13,13 @@ function RepositoryDetails() {
     (async () => {
       try {
         const gitUrl = `https://api.github.com/repositories/${id}`;
-        const response = await fetch(gitUrl);
+        const token =
+          "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";
+        const response = await fetch(gitUrl, {
+          headers:{
+           Authorization:`Bearer ${token}`, 
+          },
+        });
         const data = await response.json();
         setRepository(data);
       } catch (error) {
@@ -28,7 +34,13 @@ function RepositoryDetails() {
     (async () => {
       try {
         const gitUrl = `https://api.github.com/repositories/${id}/branches`;
-        const response = await fetch(gitUrl);
+        const token =
+          "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";
+        const response = await fetch(gitUrl, {
+          headers:{
+           Authorization:`Bearer ${token}`, 
+          },
+        });
         const data = await response.json();
         setBranch(data);
       } catch (error) {
