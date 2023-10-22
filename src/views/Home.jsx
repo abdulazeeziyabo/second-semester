@@ -20,7 +20,7 @@ const Home = () => {
           Error Testing
         </Link>
   
-      <p> &#169; AltSchool Second Semester Project 2023 <span>Created by Iyabo Abdulazeez</span></p>
+      <p> &#169; AltSchool Second Semester Project 2023 <span>Created by Iyabo </span></p>
     </div>
   );
 }
