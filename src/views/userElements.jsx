@@ -13,12 +13,7 @@ function UserElements() {
     (async () => {
       try {
         const gitUrl = `https://api.github.com/users/abdulazeeziyabo/repos`;
-        const response = await fetch(gitUrl, {
-          headers: {
-            Authorization:
-              "Bearer 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",
-          },
-        });
+        const response = await fetch(gitUrl)
         const data = await response.json();
         setUserElements(data);
       } catch (error) {
