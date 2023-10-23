@@ -5,10 +5,10 @@
   cursor: pointer;
   /* height:2rem; */
  /* position: fixed; */
-  background-color: #001f35;
+  background-color: #222;
   position: fixed;
   height: 3rem;
-  top: -1rem;
+  top: -1.2rem;
   left: 0;
   right: 0;
   border-bottom: 1px solid #334c5d;

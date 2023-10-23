@@ -12,13 +12,17 @@ const Home = () => {
         <img
           src='/github-mark.svg'
           alt='GitHub Avatar'
-          className='github-name'
+          className='github-icon'
         />
       </a>
-      <Link to='repository' className='home-page-link'>View my repositories</Link>
-      <Link to='/error-testing' className='error-testing'>
-          Error Testing
-        </Link>
+      <h2>
+        <Link to='repository' className='home-page-link'>View my repositories</Link>
+      </h2>
+      <h3>
+        <Link to='/error-testing' className='error-testing'>
+            Error Testing
+          </Link>
+      </h3>
   
       <p> &#169; AltSchool Second Semester Project 2023 <span>Created by Iyabo Abdulazeez</span></p>
     </div>
