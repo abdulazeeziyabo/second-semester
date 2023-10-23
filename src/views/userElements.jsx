@@ -12,8 +12,8 @@ function UserElements() {
   useEffect(() => {
     (async () => {
       try {
-        const gitUrl = `https://api.github.com/users/abdulazeeziyabo/repos`
-        const response = await fetch(gitUrl);
+        const gitUrl = `https://api.github.com/users/abdulazeeziyabo/repos`;
+        const response = await fetch(gitUrl)
         const data = await response.json();
         setUserElements(data);
       } catch (error) {
